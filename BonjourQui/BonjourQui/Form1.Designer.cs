@@ -30,8 +30,8 @@
         {
             this.Name = new System.Windows.Forms.Label();
             this.NameBox = new System.Windows.Forms.TextBox();
-            this.btnBienvenue = new System.Windows.Forms.Button();
             this.BonjourNom = new System.Windows.Forms.Label();
+            this.btnBienvenue = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Name
@@ -48,23 +48,11 @@
             // NameBox
             // 
             this.NameBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameBox.Location = new System.Drawing.Point(195, 20);
-            this.NameBox.Multiline = true;
+            this.NameBox.Location = new System.Drawing.Point(194, 17);
             this.NameBox.Name = "NameBox";
-            this.NameBox.Size = new System.Drawing.Size(224, 31);
+            this.NameBox.Size = new System.Drawing.Size(224, 36);
             this.NameBox.TabIndex = 1;
-            // 
-            // btnBienvenue
-            // 
-            this.btnBienvenue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.btnBienvenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBienvenue.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBienvenue.Location = new System.Drawing.Point(150, 179);
-            this.btnBienvenue.Name = "btnBienvenue";
-            this.btnBienvenue.Size = new System.Drawing.Size(138, 49);
-            this.btnBienvenue.TabIndex = 2;
-            this.btnBienvenue.Text = "Bienvenue";
-            this.btnBienvenue.UseVisualStyleBackColor = true;
+            this.NameBox.TextChanged += new System.EventHandler(this.NameBox_TextChanged);
             // 
             // BonjourNom
             // 
@@ -76,16 +64,27 @@
             this.BonjourNom.TabIndex = 3;
             this.BonjourNom.Text = "...";
             // 
+            // btnBienvenue
+            // 
+            this.btnBienvenue.Enabled = false;
+            this.btnBienvenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnBienvenue.Location = new System.Drawing.Point(147, 185);
+            this.btnBienvenue.Name = "btnBienvenue";
+            this.btnBienvenue.Size = new System.Drawing.Size(153, 55);
+            this.btnBienvenue.TabIndex = 4;
+            this.btnBienvenue.Text = "Bienvenue";
+            this.btnBienvenue.UseVisualStyleBackColor = true;
+            this.btnBienvenue.Click += new System.EventHandler(this.btnBienvenue_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 252);
-            this.Controls.Add(this.BonjourNom);
             this.Controls.Add(this.btnBienvenue);
+            this.Controls.Add(this.BonjourNom);
             this.Controls.Add(this.NameBox);
             this.Controls.Add(this.Name);
-            this.Name = "Form1";
             this.Text = "Bonjour Qui ?";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -97,8 +96,8 @@
 
         private System.Windows.Forms.Label Name;
         private System.Windows.Forms.TextBox NameBox;
-        private System.Windows.Forms.Button btnBienvenue;
         private System.Windows.Forms.Label BonjourNom;
+        private System.Windows.Forms.Button btnBienvenue;
     }
 }
 

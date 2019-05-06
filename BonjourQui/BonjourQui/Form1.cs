@@ -26,5 +26,17 @@ namespace BonjourQui
         {
 
         }
+
+        private void NameBox_TextChanged(object sender, EventArgs e)
+        {
+            btnBienvenue.Enabled = true;
+        }
+
+        private void btnBienvenue_Click(object sender, EventArgs e)
+        {
+            BonjourNom.Text = "Bonjour " + NameBox.Text;
+            NameBox.Text = "";
+            btnBienvenue.Enabled = false;
+        }
     }
 }
