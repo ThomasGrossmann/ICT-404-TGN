@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Projet : BonjourQui
+//Auteur : Thomas Grossmann
+//Date : 09.05.2019
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,14 +33,14 @@ namespace BonjourQui
 
         private void NameBox_TextChanged(object sender, EventArgs e)
         {
-            btnBienvenue.Enabled = true;
+            btnBienvenue.Enabled = true; //État du bouton quand on écrit
         }
 
         private void btnBienvenue_Click(object sender, EventArgs e)
         {
-            BonjourNom.Text = "Bonjour " + NameBox.Text;
-            NameBox.Text = "";
-            btnBienvenue.Enabled = false;
+            BonjourNom.Text = "Bonjour " + NameBox.Text; //Changer le texte du label
+            NameBox.Text = ""; //Texte de la TextBox après clic
+            btnBienvenue.Enabled = false; //État du bouton après clic
         }
     }
 }
