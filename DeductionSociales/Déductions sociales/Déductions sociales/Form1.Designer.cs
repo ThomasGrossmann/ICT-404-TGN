@@ -59,6 +59,7 @@
             this.txtRevenu.Name = "txtRevenu";
             this.txtRevenu.Size = new System.Drawing.Size(128, 21);
             this.txtRevenu.TabIndex = 1;
+            this.txtRevenu.Text = "145000";
             this.txtRevenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblCoefficient
@@ -78,6 +79,7 @@
             this.txtCoefficient.Name = "txtCoefficient";
             this.txtCoefficient.Size = new System.Drawing.Size(51, 21);
             this.txtCoefficient.TabIndex = 2;
+            this.txtCoefficient.Text = "2.5";
             this.txtCoefficient.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ckbJeune
@@ -98,6 +100,7 @@
             this.txtJeune.Name = "txtJeune";
             this.txtJeune.Size = new System.Drawing.Size(50, 21);
             this.txtJeune.TabIndex = 4;
+            this.txtJeune.Text = "900";
             this.txtJeune.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ckbTransport
@@ -118,6 +121,7 @@
             this.txtTransport.Name = "txtTransport";
             this.txtTransport.Size = new System.Drawing.Size(50, 21);
             this.txtTransport.TabIndex = 6;
+            this.txtTransport.Text = "650";
             this.txtTransport.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ckbRabais
@@ -138,24 +142,26 @@
             this.txtRabais.Name = "txtRabais";
             this.txtRabais.Size = new System.Drawing.Size(50, 21);
             this.txtRabais.TabIndex = 8;
+            this.txtRabais.Text = "0";
             this.txtRabais.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(164, 307);
+            this.button1.Location = new System.Drawing.Point(145, 306);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(94, 30);
             this.button1.TabIndex = 9;
             this.button1.Text = "Calcul";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblImposable
             // 
             this.lblImposable.AutoSize = true;
-            this.lblImposable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImposable.Location = new System.Drawing.Point(84, 357);
+            this.lblImposable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImposable.Location = new System.Drawing.Point(83, 354);
             this.lblImposable.Name = "lblImposable";
-            this.lblImposable.Size = new System.Drawing.Size(146, 17);
+            this.lblImposable.Size = new System.Drawing.Size(183, 20);
             this.lblImposable.TabIndex = 10;
             this.lblImposable.Text = "Revenu imposable: fr.";
             // 
