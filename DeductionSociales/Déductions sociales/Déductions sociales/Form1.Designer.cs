@@ -39,6 +39,7 @@
             this.ckbRabais = new System.Windows.Forms.CheckBox();
             this.txtRabais = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblImposable = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblRevenu
@@ -58,6 +59,7 @@
             this.txtRevenu.Name = "txtRevenu";
             this.txtRevenu.Size = new System.Drawing.Size(128, 21);
             this.txtRevenu.TabIndex = 1;
+            this.txtRevenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblCoefficient
             // 
@@ -76,6 +78,7 @@
             this.txtCoefficient.Name = "txtCoefficient";
             this.txtCoefficient.Size = new System.Drawing.Size(51, 21);
             this.txtCoefficient.TabIndex = 2;
+            this.txtCoefficient.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ckbJeune
             // 
@@ -95,6 +98,7 @@
             this.txtJeune.Name = "txtJeune";
             this.txtJeune.Size = new System.Drawing.Size(50, 21);
             this.txtJeune.TabIndex = 4;
+            this.txtJeune.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ckbTransport
             // 
@@ -114,6 +118,7 @@
             this.txtTransport.Name = "txtTransport";
             this.txtTransport.Size = new System.Drawing.Size(50, 21);
             this.txtTransport.TabIndex = 6;
+            this.txtTransport.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ckbRabais
             // 
@@ -133,6 +138,7 @@
             this.txtRabais.Name = "txtRabais";
             this.txtRabais.Size = new System.Drawing.Size(50, 21);
             this.txtRabais.TabIndex = 8;
+            this.txtRabais.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button1
             // 
@@ -140,14 +146,25 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
+            this.button1.Text = "Calcul";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // lblImposable
+            // 
+            this.lblImposable.AutoSize = true;
+            this.lblImposable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImposable.Location = new System.Drawing.Point(84, 357);
+            this.lblImposable.Name = "lblImposable";
+            this.lblImposable.Size = new System.Drawing.Size(146, 17);
+            this.lblImposable.TabIndex = 10;
+            this.lblImposable.Text = "Revenu imposable: fr.";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 383);
+            this.Controls.Add(this.lblImposable);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtRabais);
             this.Controls.Add(this.ckbRabais);
@@ -161,6 +178,7 @@
             this.Controls.Add(this.lblRevenu);
             this.Name = "Form1";
             this.Text = "Déductions";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,6 +197,7 @@
         private System.Windows.Forms.CheckBox ckbRabais;
         private System.Windows.Forms.TextBox txtRabais;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblImposable;
     }
 }
 
