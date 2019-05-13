@@ -42,5 +42,10 @@ namespace BonjourQui
             NameBox.Text = ""; //Texte de la TextBox après clic
             btnBienvenue.Enabled = false; //État du bouton après clic
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Name = new System.Windows.Forms.Label();
             this.NameBox = new System.Windows.Forms.TextBox();
             this.BonjourNom = new System.Windows.Forms.Label();
             this.btnBienvenue = new System.Windows.Forms.Button();
+            this.btnQuitter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Name
@@ -76,15 +78,28 @@
             this.btnBienvenue.UseVisualStyleBackColor = true;
             this.btnBienvenue.Click += new System.EventHandler(this.btnBienvenue_Click);
             // 
+            // btnQuitter
+            // 
+            this.btnQuitter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQuitter.BackgroundImage")));
+            this.btnQuitter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnQuitter.Location = new System.Drawing.Point(364, 185);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(54, 53);
+            this.btnQuitter.TabIndex = 5;
+            this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 252);
+            this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnBienvenue);
             this.Controls.Add(this.BonjourNom);
             this.Controls.Add(this.NameBox);
             this.Controls.Add(this.Name);
+            this.Name = "Form1";
             this.Text = "Bonjour Qui ?";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -98,6 +113,7 @@
         private System.Windows.Forms.TextBox NameBox;
         private System.Windows.Forms.Label BonjourNom;
         private System.Windows.Forms.Button btnBienvenue;
+        private System.Windows.Forms.Button btnQuitter;
     }
 }
 
