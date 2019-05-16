@@ -59,7 +59,6 @@
             this.txtRevenu.Name = "txtRevenu";
             this.txtRevenu.Size = new System.Drawing.Size(128, 21);
             this.txtRevenu.TabIndex = 1;
-            this.txtRevenu.Text = "145000";
             this.txtRevenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblCoefficient
@@ -79,7 +78,6 @@
             this.txtCoefficient.Name = "txtCoefficient";
             this.txtCoefficient.Size = new System.Drawing.Size(51, 21);
             this.txtCoefficient.TabIndex = 2;
-            this.txtCoefficient.Text = "2.5";
             this.txtCoefficient.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ckbJeune

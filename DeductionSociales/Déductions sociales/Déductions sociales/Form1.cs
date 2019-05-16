@@ -28,22 +28,33 @@ namespace Déductions_sociales
 
         private void button1_Click(object sender, EventArgs e)
         {
-            float Revenu = float.Parse(txtRevenu.Text);            float Coefficient = float.Parse(txtCoefficient.Text);            int Jeune = int.Parse(txtJeune.Text);            int Transport = int.Parse(txtTransport.Text);            float Rabais = float.Parse(txtRabais.Text);
-            float Imposable = Revenu / Coefficient;
-            if(ckbRabais.Checked == true)
+            if(txtRevenu.Text == "" || txtCoefficient.Text == "")
             {
-                Imposable = Imposable - ((Rabais / 100) * Imposable);
+                MessageBox.Show("Veuillez remplir les cases vides", "TES NUL");
             }
-            if(ckbJeune.Checked == true)
+            else
             {
-                Imposable = Imposable - Jeune;
+                float Revenu = float.Parse(txtRevenu.Text);
+                float Coefficient = float.Parse(txtCoefficient.Text);
+                int Jeune = int.Parse(txtJeune.Text);
+                int Transport = int.Parse(txtTransport.Text);
+                float Rabais = float.Parse(txtRabais.Text);
+                float Imposable = Revenu / Coefficient;
+                if (ckbRabais.Checked == true)
+                {
+                    Imposable = Imposable - ((Rabais / 100) * Imposable);
+                }
+                if (ckbJeune.Checked == true)
+                {
+                    Imposable = Imposable - Jeune;
+                }
+                if (ckbTransport.Checked == true)
+                {
+                    Imposable = Imposable - Transport;
+                }
+                lblImposable.Visible = true;
+                lblImposable.Text = String.Format("Revenu imposable: {0:C2}", Imposable);
             }
-            if(ckbTransport.Checked == true)
-            {
-                Imposable = Imposable - Transport;
-            }
-            lblImposable.Visible = true;
-            lblImposable.Text = String.Format("Revenu imposable: {0:C2}", Imposable);
         }
     }
 }
