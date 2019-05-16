@@ -159,9 +159,9 @@
             this.lblImposable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblImposable.Location = new System.Drawing.Point(83, 354);
             this.lblImposable.Name = "lblImposable";
-            this.lblImposable.Size = new System.Drawing.Size(183, 20);
+            this.lblImposable.Size = new System.Drawing.Size(166, 20);
             this.lblImposable.TabIndex = 10;
-            this.lblImposable.Text = "Revenu imposable: fr.";
+            this.lblImposable.Text = "Revenu imposable: ";
             // 
             // Form1
             // 
