@@ -42,7 +42,7 @@ namespace Déductions_sociales
                 float Imposable = Revenu / Coefficient;
                 if (ckbRabais.Checked == true)
                 {
-                    Imposable = Imposable - ((Rabais / 100) * Imposable);
+                    Imposable = Imposable - (Rabais / 100 * Imposable);
                 }
                 if (ckbJeune.Checked == true)
                 {
@@ -53,7 +53,7 @@ namespace Déductions_sociales
                     Imposable = Imposable - Transport;
                 }
                 lblImposable.Visible = true;
-                lblImposable.Text = String.Format("Revenu imposable: {0:C2}", Imposable);
+                lblImposable.Text = String.Format("Revenu imposable: {0:c2}", Imposable);
             }
         }
     }
