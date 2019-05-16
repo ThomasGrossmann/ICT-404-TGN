@@ -1,6 +1,6 @@
 ﻿//Projet : Déductions
 //Auteur : Thomas Grossmann
-//Date : 13.05.2019
+//Date : 16.05.2019
 
 using System;
 using System.Collections.Generic;
@@ -53,7 +53,7 @@ namespace Déductions_sociales
                     Imposable = Imposable - Transport;
                 }
                 lblImposable.Visible = true;
-                lblImposable.Text = String.Format("Revenu imposable: {0:c2}", Imposable);
+                lblImposable.Text = String.Format("Revenu imposable: {0:C2}", Imposable);
             }
         }
     }
