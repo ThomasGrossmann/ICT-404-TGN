@@ -46,6 +46,7 @@
             this.btnHG.TabIndex = 0;
             this.btnHG.Text = "Haut/Gauche";
             this.btnHG.UseVisualStyleBackColor = true;
+            this.btnHG.Click += new System.EventHandler(this.btnHG_Click);
             // 
             // btnBG
             // 
@@ -55,6 +56,7 @@
             this.btnBG.TabIndex = 1;
             this.btnBG.Text = "Bas/Gauche";
             this.btnBG.UseVisualStyleBackColor = true;
+            this.btnBG.Click += new System.EventHandler(this.btnBG_Click);
             // 
             // btnHD
             // 
@@ -64,6 +66,7 @@
             this.btnHD.TabIndex = 2;
             this.btnHD.Text = "Haut/Droite";
             this.btnHD.UseVisualStyleBackColor = true;
+            this.btnHD.Click += new System.EventHandler(this.btnHD_Click);
             // 
             // btnBD
             // 
@@ -73,6 +76,7 @@
             this.btnBD.TabIndex = 3;
             this.btnBD.Text = "Bas/Droite";
             this.btnBD.UseVisualStyleBackColor = true;
+            this.btnBD.Click += new System.EventHandler(this.btnBD_Click);
             // 
             // btnBleu
             // 
@@ -82,6 +86,7 @@
             this.btnBleu.TabIndex = 4;
             this.btnBleu.Text = "Bleu";
             this.btnBleu.UseVisualStyleBackColor = true;
+            this.btnBleu.Click += new System.EventHandler(this.btnBleu_Click);
             // 
             // btnRouge
             // 
@@ -91,6 +96,7 @@
             this.btnRouge.TabIndex = 5;
             this.btnRouge.Text = "Rouge";
             this.btnRouge.UseVisualStyleBackColor = true;
+            this.btnRouge.Click += new System.EventHandler(this.btnRouge_Click);
             // 
             // btnStats
             // 
@@ -100,6 +106,7 @@
             this.btnStats.TabIndex = 6;
             this.btnStats.Text = "Stats";
             this.btnStats.UseVisualStyleBackColor = true;
+            this.btnStats.Click += new System.EventHandler(this.btnStats_Click);
             // 
             // btnQuitter
             // 
@@ -109,6 +116,7 @@
             this.btnQuitter.TabIndex = 7;
             this.btnQuitter.Text = "Quitter";
             this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // Form1
             // 
@@ -124,6 +132,7 @@
             this.Controls.Add(this.btnBG);
             this.Controls.Add(this.btnHG);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fenetre";
             this.ResumeLayout(false);
 

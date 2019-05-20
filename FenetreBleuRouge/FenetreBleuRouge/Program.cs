@@ -16,7 +16,7 @@ namespace FenetreBleuRouge
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Fenetre());
+            Application.Run(new Form1());
         }
     }
 }
