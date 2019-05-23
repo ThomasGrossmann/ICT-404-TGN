@@ -176,11 +176,14 @@
             // 
             this.txtCommande.BackColor = System.Drawing.Color.Yellow;
             this.txtCommande.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCommande.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCommande.Location = new System.Drawing.Point(45, 230);
+            this.txtCommande.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.txtCommande.Multiline = true;
             this.txtCommande.Name = "txtCommande";
             this.txtCommande.Size = new System.Drawing.Size(267, 65);
             this.txtCommande.TabIndex = 13;
+            this.txtCommande.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
