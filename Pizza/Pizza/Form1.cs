@@ -16,5 +16,20 @@ namespace Pizza
         {
             InitializeComponent();
         }
+
+        private void btnCommander_Click(object sender, EventArgs e)
+        {
+            int Table = int.Parse(txtTable.Text);
+
+            if (txtTable.Text == "")
+            {
+                MessageBox.Show("Table requise.", "ERREUR");
+                txtCommande.Text = "";
+            }
+            if(optExtra.Checked == true)
+            {
+                txtCommande.Text = "Pour la " + Table + " : pâte extra-fine avec ...";
+            }
+        }
     }
 }
