@@ -28,20 +28,16 @@ namespace Pizza
             }
             if(optExtra.Checked == true)
             {
-                txtCommande.Text = String.Format("Pour la {0} : pâte {1} ", Table, optExtra.Text);
-                if(chkAnchois.Checked == true)
-                {
-                    txtCommande.Text = String.Format("Pour la {0} : pâte {1} avec {2}", Table, optExtra.Text, chkAnchois.Text);
-                }
+                txtCommande.Text = String.Format("Pour la {0} : pâte extra-fine avec ", Table);
             }else if(optFine.Checked == true)
             {
-                txtCommande.Text = String.Format("Pour la {0} : pâte {1} ", Table, optFine.Text);
+                txtCommande.Text = String.Format("Pour la {0} : pâte fine avec ", Table);
             }else if(optNormale.Checked == true)
             {
-                txtCommande.Text = String.Format("Pour la {0} : pâte {1} ", Table, optNormale.Text);
+                txtCommande.Text = String.Format("Pour la {0} : pâte normale avec ", Table);
             }else if(optEpaisse.Checked == true)
             {
-                txtCommande.Text = String.Format("Pour la {0} : pâte {1} ", Table, optEpaisse.Text);
+                txtCommande.Text = String.Format("Pour la {0} : pâte epaisse avec ", Table);
             }
         }
     }
