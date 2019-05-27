@@ -19,8 +19,6 @@ namespace Pizza
 
         private void btnCommander_Click(object sender, EventArgs e)
         {
-            int Table = int.Parse(txtTable.Text);
-
             if (txtTable.Text == "")
             {
                 MessageBox.Show("Table requise.", "ERREUR");
@@ -28,16 +26,36 @@ namespace Pizza
             }
             if(optExtra.Checked == true)
             {
-                txtCommande.Text = String.Format("Pour la {0} : pâte extra-fine avec ", Table);
+                txtCommande.Text = "Pour la " + txtTable.Text + " : pâte extra-fine avec ";
             }else if(optFine.Checked == true)
             {
-                txtCommande.Text = String.Format("Pour la {0} : pâte fine avec ", Table);
+                txtCommande.Text = "Pour la " + txtTable.Text + " : pâte fine avec ";
             }else if(optNormale.Checked == true)
             {
-                txtCommande.Text = String.Format("Pour la {0} : pâte normale avec ", Table);
+                txtCommande.Text = "Pour la " + txtTable.Text + " : pâte normale avec ";
             }else if(optEpaisse.Checked == true)
             {
-                txtCommande.Text = String.Format("Pour la {0} : pâte epaisse avec ", Table);
+                txtCommande.Text = "Pour la " + txtTable.Text + " : pâte epaisse avec ";
+            }
+            if (chkAnchois.Checked == true)
+            {
+                txtCommande.Text += "anchois, ";
+            }
+            if (chkCapres.Checked == true)
+            {
+                txtCommande.Text += "capres, ";
+            }
+            if (chkCrevettes.Checked == true)
+            {
+                txtCommande.Text += "crevettes, ";
+            }
+            if(chkJambon.Checked == true)
+            {
+                txtCommande.Text += "jambon, ";
+            }
+            if (txtCommande.Text != "")
+            {
+                txtCommande.Text = txtCommande.Text.Substring(0, txtCommande.Text.Length - 2);
             }
         }
     }
