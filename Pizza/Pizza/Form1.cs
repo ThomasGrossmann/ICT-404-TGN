@@ -39,23 +39,23 @@ namespace Pizza
             }
             if (chkAnchois.Checked == true)
             {
-                txtCommande.Text += "anchois, ";
+                txtCommande.Text += " anchois,";
             }
             if (chkCapres.Checked == true)
             {
-                txtCommande.Text += "capres, ";
+                txtCommande.Text += " capres,";
             }
             if (chkCrevettes.Checked == true)
             {
-                txtCommande.Text += "crevettes, ";
+                txtCommande.Text += " crevettes,";
             }
             if(chkJambon.Checked == true)
             {
-                txtCommande.Text += "jambon, ";
+                txtCommande.Text += " jambon,";
             }
             if (txtCommande.Text != "")
             {
-                txtCommande.Text = txtCommande.Text.Substring(0, txtCommande.Text.Length - 2);
+                txtCommande.Text = txtCommande.Text.Substring(0, txtCommande.Text.Length - 1);
             }
         }
     }
