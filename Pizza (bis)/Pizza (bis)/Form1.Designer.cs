@@ -31,14 +31,14 @@
             this.lblTable = new System.Windows.Forms.Label();
             this.txtTable = new System.Windows.Forms.TextBox();
             this.grpPâte = new System.Windows.Forms.GroupBox();
-            this.optExtrafine = new System.Windows.Forms.RadioButton();
-            this.optFine = new System.Windows.Forms.RadioButton();
-            this.optNormale = new System.Windows.Forms.RadioButton();
             this.optEpaisse = new System.Windows.Forms.RadioButton();
+            this.optNormale = new System.Windows.Forms.RadioButton();
+            this.optFine = new System.Windows.Forms.RadioButton();
+            this.optExtrafine = new System.Windows.Forms.RadioButton();
             this.grpMozza = new System.Windows.Forms.GroupBox();
-            this.optMozzaNorm = new System.Windows.Forms.RadioButton();
-            this.optMozzaMaigre = new System.Windows.Forms.RadioButton();
             this.optMozzaBuff = new System.Windows.Forms.RadioButton();
+            this.optMozzaMaigre = new System.Windows.Forms.RadioButton();
+            this.optMozzaNorm = new System.Windows.Forms.RadioButton();
             this.chkAnchois = new System.Windows.Forms.CheckBox();
             this.chkCapres = new System.Windows.Forms.CheckBox();
             this.chkJambon = new System.Windows.Forms.CheckBox();
@@ -46,7 +46,7 @@
             this.btnCommander = new System.Windows.Forms.Button();
             this.btnChanger = new System.Windows.Forms.Button();
             this.lblRépertoire = new System.Windows.Forms.Label();
-            this.txtRépertoire = new System.Windows.Forms.TextBox();
+            this.txtRepertoire = new System.Windows.Forms.TextBox();
             this.grpPâte.SuspendLayout();
             this.grpMozza.SuspendLayout();
             this.SuspendLayout();
@@ -80,27 +80,16 @@
             this.grpPâte.TabStop = false;
             this.grpPâte.Text = "Pâte";
             // 
-            // optExtrafine
+            // optEpaisse
             // 
-            this.optExtrafine.AutoSize = true;
-            this.optExtrafine.Location = new System.Drawing.Point(7, 20);
-            this.optExtrafine.Name = "optExtrafine";
-            this.optExtrafine.Size = new System.Drawing.Size(69, 17);
-            this.optExtrafine.TabIndex = 0;
-            this.optExtrafine.TabStop = true;
-            this.optExtrafine.Text = "Extra-fine";
-            this.optExtrafine.UseVisualStyleBackColor = true;
-            // 
-            // optFine
-            // 
-            this.optFine.AutoSize = true;
-            this.optFine.Location = new System.Drawing.Point(7, 44);
-            this.optFine.Name = "optFine";
-            this.optFine.Size = new System.Drawing.Size(45, 17);
-            this.optFine.TabIndex = 1;
-            this.optFine.TabStop = true;
-            this.optFine.Text = "Fine";
-            this.optFine.UseVisualStyleBackColor = true;
+            this.optEpaisse.AutoSize = true;
+            this.optEpaisse.Location = new System.Drawing.Point(7, 92);
+            this.optEpaisse.Name = "optEpaisse";
+            this.optEpaisse.Size = new System.Drawing.Size(62, 17);
+            this.optEpaisse.TabIndex = 3;
+            this.optEpaisse.TabStop = true;
+            this.optEpaisse.Text = "Epaisse";
+            this.optEpaisse.UseVisualStyleBackColor = true;
             // 
             // optNormale
             // 
@@ -114,16 +103,27 @@
             this.optNormale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.optNormale.UseVisualStyleBackColor = true;
             // 
-            // optEpaisse
+            // optFine
             // 
-            this.optEpaisse.AutoSize = true;
-            this.optEpaisse.Location = new System.Drawing.Point(7, 92);
-            this.optEpaisse.Name = "optEpaisse";
-            this.optEpaisse.Size = new System.Drawing.Size(62, 17);
-            this.optEpaisse.TabIndex = 3;
-            this.optEpaisse.TabStop = true;
-            this.optEpaisse.Text = "Epaisse";
-            this.optEpaisse.UseVisualStyleBackColor = true;
+            this.optFine.AutoSize = true;
+            this.optFine.Location = new System.Drawing.Point(7, 44);
+            this.optFine.Name = "optFine";
+            this.optFine.Size = new System.Drawing.Size(45, 17);
+            this.optFine.TabIndex = 1;
+            this.optFine.TabStop = true;
+            this.optFine.Text = "Fine";
+            this.optFine.UseVisualStyleBackColor = true;
+            // 
+            // optExtrafine
+            // 
+            this.optExtrafine.AutoSize = true;
+            this.optExtrafine.Location = new System.Drawing.Point(7, 20);
+            this.optExtrafine.Name = "optExtrafine";
+            this.optExtrafine.Size = new System.Drawing.Size(69, 17);
+            this.optExtrafine.TabIndex = 0;
+            this.optExtrafine.TabStop = true;
+            this.optExtrafine.Text = "Extra-fine";
+            this.optExtrafine.UseVisualStyleBackColor = true;
             // 
             // grpMozza
             // 
@@ -137,16 +137,16 @@
             this.grpMozza.TabStop = false;
             this.grpMozza.Text = "Mozzarella";
             // 
-            // optMozzaNorm
+            // optMozzaBuff
             // 
-            this.optMozzaNorm.AutoSize = true;
-            this.optMozzaNorm.Location = new System.Drawing.Point(7, 29);
-            this.optMozzaNorm.Name = "optMozzaNorm";
-            this.optMozzaNorm.Size = new System.Drawing.Size(64, 17);
-            this.optMozzaNorm.TabIndex = 0;
-            this.optMozzaNorm.TabStop = true;
-            this.optMozzaNorm.Text = "Normale";
-            this.optMozzaNorm.UseVisualStyleBackColor = true;
+            this.optMozzaBuff.AutoSize = true;
+            this.optMozzaBuff.Location = new System.Drawing.Point(7, 77);
+            this.optMozzaBuff.Name = "optMozzaBuff";
+            this.optMozzaBuff.Size = new System.Drawing.Size(70, 17);
+            this.optMozzaBuff.TabIndex = 2;
+            this.optMozzaBuff.TabStop = true;
+            this.optMozzaBuff.Text = "Bufflonne";
+            this.optMozzaBuff.UseVisualStyleBackColor = true;
             // 
             // optMozzaMaigre
             // 
@@ -159,16 +159,16 @@
             this.optMozzaMaigre.Text = "Maigre";
             this.optMozzaMaigre.UseVisualStyleBackColor = true;
             // 
-            // optMozzaBuff
+            // optMozzaNorm
             // 
-            this.optMozzaBuff.AutoSize = true;
-            this.optMozzaBuff.Location = new System.Drawing.Point(7, 77);
-            this.optMozzaBuff.Name = "optMozzaBuff";
-            this.optMozzaBuff.Size = new System.Drawing.Size(70, 17);
-            this.optMozzaBuff.TabIndex = 2;
-            this.optMozzaBuff.TabStop = true;
-            this.optMozzaBuff.Text = "Bufflonne";
-            this.optMozzaBuff.UseVisualStyleBackColor = true;
+            this.optMozzaNorm.AutoSize = true;
+            this.optMozzaNorm.Location = new System.Drawing.Point(7, 29);
+            this.optMozzaNorm.Name = "optMozzaNorm";
+            this.optMozzaNorm.Size = new System.Drawing.Size(64, 17);
+            this.optMozzaNorm.TabIndex = 0;
+            this.optMozzaNorm.TabStop = true;
+            this.optMozzaNorm.Text = "Normale";
+            this.optMozzaNorm.UseVisualStyleBackColor = true;
             // 
             // chkAnchois
             // 
@@ -219,6 +219,7 @@
             this.btnCommander.TabIndex = 8;
             this.btnCommander.Text = "Commander";
             this.btnCommander.UseVisualStyleBackColor = true;
+            this.btnCommander.Click += new System.EventHandler(this.btnCommander_Click);
             // 
             // btnChanger
             // 
@@ -229,29 +230,31 @@
             this.btnChanger.TabIndex = 9;
             this.btnChanger.Text = "Changer";
             this.btnChanger.UseVisualStyleBackColor = true;
+            this.btnChanger.Click += new System.EventHandler(this.btnChanger_Click);
             // 
             // lblRépertoire
             // 
             this.lblRépertoire.AutoSize = true;
-            this.lblRépertoire.Location = new System.Drawing.Point(107, 287);
+            this.lblRépertoire.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRépertoire.Location = new System.Drawing.Point(96, 282);
             this.lblRépertoire.Name = "lblRépertoire";
-            this.lblRépertoire.Size = new System.Drawing.Size(59, 13);
+            this.lblRépertoire.Size = new System.Drawing.Size(68, 15);
             this.lblRépertoire.TabIndex = 10;
             this.lblRépertoire.Text = "Répertoire:";
             // 
-            // txtRépertoire
+            // txtRepertoire
             // 
-            this.txtRépertoire.Location = new System.Drawing.Point(170, 281);
-            this.txtRépertoire.Name = "txtRépertoire";
-            this.txtRépertoire.Size = new System.Drawing.Size(370, 20);
-            this.txtRépertoire.TabIndex = 11;
+            this.txtRepertoire.Location = new System.Drawing.Point(170, 281);
+            this.txtRepertoire.Name = "txtRepertoire";
+            this.txtRepertoire.Size = new System.Drawing.Size(370, 20);
+            this.txtRepertoire.TabIndex = 11;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(552, 313);
-            this.Controls.Add(this.txtRépertoire);
+            this.Controls.Add(this.txtRepertoire);
             this.Controls.Add(this.lblRépertoire);
             this.Controls.Add(this.btnChanger);
             this.Controls.Add(this.btnCommander);
@@ -294,7 +297,7 @@
         private System.Windows.Forms.Button btnCommander;
         private System.Windows.Forms.Button btnChanger;
         private System.Windows.Forms.Label lblRépertoire;
-        private System.Windows.Forms.TextBox txtRépertoire;
+        private System.Windows.Forms.TextBox txtRepertoire;
     }
 }
 
