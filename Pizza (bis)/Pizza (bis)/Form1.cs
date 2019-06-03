@@ -32,7 +32,7 @@ namespace Pizza__bis_
         private void btnCommander_Click(object sender, EventArgs e)
         {
             int Table = int.Parse(txtTable.Text);
-            StreamWriter file = new StreamWriter("Table " + txtTable.Text);
+            StreamWriter file = new StreamWriter("Table" + txtTable.Text + ".txt");
             MessageBox.Show("Commande envoyée !");
         }
     }
