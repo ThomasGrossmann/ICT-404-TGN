@@ -35,10 +35,6 @@
             this.optNormale = new System.Windows.Forms.RadioButton();
             this.optFine = new System.Windows.Forms.RadioButton();
             this.optExtrafine = new System.Windows.Forms.RadioButton();
-            this.grpMozza = new System.Windows.Forms.GroupBox();
-            this.optMozzaBuff = new System.Windows.Forms.RadioButton();
-            this.optMozzaMaigre = new System.Windows.Forms.RadioButton();
-            this.optMozzaNorm = new System.Windows.Forms.RadioButton();
             this.chkAnchois = new System.Windows.Forms.CheckBox();
             this.chkCapres = new System.Windows.Forms.CheckBox();
             this.chkJambon = new System.Windows.Forms.CheckBox();
@@ -48,7 +44,6 @@
             this.lblRépertoire = new System.Windows.Forms.Label();
             this.txtRepertoire = new System.Windows.Forms.TextBox();
             this.grpPâte.SuspendLayout();
-            this.grpMozza.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTable
@@ -125,55 +120,10 @@
             this.optExtrafine.Text = "Extra-fine";
             this.optExtrafine.UseVisualStyleBackColor = true;
             // 
-            // grpMozza
-            // 
-            this.grpMozza.Controls.Add(this.optMozzaBuff);
-            this.grpMozza.Controls.Add(this.optMozzaMaigre);
-            this.grpMozza.Controls.Add(this.optMozzaNorm);
-            this.grpMozza.Location = new System.Drawing.Point(163, 57);
-            this.grpMozza.Name = "grpMozza";
-            this.grpMozza.Size = new System.Drawing.Size(117, 121);
-            this.grpMozza.TabIndex = 3;
-            this.grpMozza.TabStop = false;
-            this.grpMozza.Text = "Mozzarella";
-            // 
-            // optMozzaBuff
-            // 
-            this.optMozzaBuff.AutoSize = true;
-            this.optMozzaBuff.Location = new System.Drawing.Point(7, 77);
-            this.optMozzaBuff.Name = "optMozzaBuff";
-            this.optMozzaBuff.Size = new System.Drawing.Size(70, 17);
-            this.optMozzaBuff.TabIndex = 2;
-            this.optMozzaBuff.TabStop = true;
-            this.optMozzaBuff.Text = "Bufflonne";
-            this.optMozzaBuff.UseVisualStyleBackColor = true;
-            // 
-            // optMozzaMaigre
-            // 
-            this.optMozzaMaigre.AutoSize = true;
-            this.optMozzaMaigre.Location = new System.Drawing.Point(7, 53);
-            this.optMozzaMaigre.Name = "optMozzaMaigre";
-            this.optMozzaMaigre.Size = new System.Drawing.Size(57, 17);
-            this.optMozzaMaigre.TabIndex = 1;
-            this.optMozzaMaigre.TabStop = true;
-            this.optMozzaMaigre.Text = "Maigre";
-            this.optMozzaMaigre.UseVisualStyleBackColor = true;
-            // 
-            // optMozzaNorm
-            // 
-            this.optMozzaNorm.AutoSize = true;
-            this.optMozzaNorm.Location = new System.Drawing.Point(7, 29);
-            this.optMozzaNorm.Name = "optMozzaNorm";
-            this.optMozzaNorm.Size = new System.Drawing.Size(64, 17);
-            this.optMozzaNorm.TabIndex = 0;
-            this.optMozzaNorm.TabStop = true;
-            this.optMozzaNorm.Text = "Normale";
-            this.optMozzaNorm.UseVisualStyleBackColor = true;
-            // 
             // chkAnchois
             // 
             this.chkAnchois.AutoSize = true;
-            this.chkAnchois.Location = new System.Drawing.Point(334, 77);
+            this.chkAnchois.Location = new System.Drawing.Point(286, 78);
             this.chkAnchois.Name = "chkAnchois";
             this.chkAnchois.Size = new System.Drawing.Size(64, 17);
             this.chkAnchois.TabIndex = 4;
@@ -183,7 +133,7 @@
             // chkCapres
             // 
             this.chkCapres.AutoSize = true;
-            this.chkCapres.Location = new System.Drawing.Point(334, 101);
+            this.chkCapres.Location = new System.Drawing.Point(286, 102);
             this.chkCapres.Name = "chkCapres";
             this.chkCapres.Size = new System.Drawing.Size(59, 17);
             this.chkCapres.TabIndex = 5;
@@ -193,7 +143,7 @@
             // chkJambon
             // 
             this.chkJambon.AutoSize = true;
-            this.chkJambon.Location = new System.Drawing.Point(334, 125);
+            this.chkJambon.Location = new System.Drawing.Point(286, 126);
             this.chkJambon.Name = "chkJambon";
             this.chkJambon.Size = new System.Drawing.Size(63, 17);
             this.chkJambon.TabIndex = 6;
@@ -203,7 +153,7 @@
             // chkCrevettes
             // 
             this.chkCrevettes.AutoSize = true;
-            this.chkCrevettes.Location = new System.Drawing.Point(334, 149);
+            this.chkCrevettes.Location = new System.Drawing.Point(286, 150);
             this.chkCrevettes.Name = "chkCrevettes";
             this.chkCrevettes.Size = new System.Drawing.Size(71, 17);
             this.chkCrevettes.TabIndex = 7;
@@ -262,7 +212,6 @@
             this.Controls.Add(this.chkJambon);
             this.Controls.Add(this.chkCapres);
             this.Controls.Add(this.chkAnchois);
-            this.Controls.Add(this.grpMozza);
             this.Controls.Add(this.grpPâte);
             this.Controls.Add(this.txtTable);
             this.Controls.Add(this.lblTable);
@@ -270,8 +219,6 @@
             this.Text = "Form1";
             this.grpPâte.ResumeLayout(false);
             this.grpPâte.PerformLayout();
-            this.grpMozza.ResumeLayout(false);
-            this.grpMozza.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,10 +233,6 @@
         private System.Windows.Forms.RadioButton optNormale;
         private System.Windows.Forms.RadioButton optFine;
         private System.Windows.Forms.RadioButton optExtrafine;
-        private System.Windows.Forms.GroupBox grpMozza;
-        private System.Windows.Forms.RadioButton optMozzaBuff;
-        private System.Windows.Forms.RadioButton optMozzaMaigre;
-        private System.Windows.Forms.RadioButton optMozzaNorm;
         private System.Windows.Forms.CheckBox chkAnchois;
         private System.Windows.Forms.CheckBox chkCapres;
         private System.Windows.Forms.CheckBox chkJambon;
