@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Auteur : Thomas Grossmann
+//Programme : Trabant 2000
+//Date : 17.06.2019
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
