@@ -16,5 +16,19 @@ namespace ComboBox
         {
             InitializeComponent();
         }
+
+        private void ComboBox_Load(object sender, EventArgs e)
+        {
+            cboGymnase.Items.Add("Gymnase du Bugnon");
+            cboGymnase.Items.Add("Gymnase de Beaulieu");
+            cboGymnase.Items.Add("Gymnase d'Yverdon");
+            cboHG.Items.Add("Swisscom");
+            cboHG.Items.Add("Arches");
+        }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

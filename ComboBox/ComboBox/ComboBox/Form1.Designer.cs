@@ -28,27 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmb = new System.Windows.Forms.ComboBox();
+            this.cboHG = new System.Windows.Forms.ComboBox();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnEffacer = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnQuitter = new System.Windows.Forms.Button();
             this.lstEcoles = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.cmbGymnase = new System.Windows.Forms.ComboBox();
+            this.cboGymnase = new System.Windows.Forms.ComboBox();
+            this.lstRes = new System.Windows.Forms.ListBox();
+            this.lblEcoles = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // cmb
+            // cboHG
             // 
-            this.cmb.ForeColor = System.Drawing.Color.DarkRed;
-            this.cmb.FormattingEnabled = true;
-            this.cmb.Items.AddRange(new object[] {
-            "Swisscom",
-            "Arches"});
-            this.cmb.Location = new System.Drawing.Point(29, 29);
-            this.cmb.Name = "cmb";
-            this.cmb.Size = new System.Drawing.Size(121, 21);
-            this.cmb.TabIndex = 0;
+            this.cboHG.ForeColor = System.Drawing.Color.DarkRed;
+            this.cboHG.FormattingEnabled = true;
+            this.cboHG.Location = new System.Drawing.Point(29, 29);
+            this.cboHG.Name = "cboHG";
+            this.cboHG.Size = new System.Drawing.Size(121, 21);
+            this.cboHG.TabIndex = 0;
             // 
             // btnAjouter
             // 
@@ -58,6 +56,7 @@
             this.btnAjouter.TabIndex = 1;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnEffacer
             // 
@@ -102,57 +101,66 @@
             this.lstEcoles.Size = new System.Drawing.Size(121, 173);
             this.lstEcoles.TabIndex = 5;
             // 
-            // listBox1
+            // cboGymnase
             // 
-            this.listBox1.ForeColor = System.Drawing.Color.Blue;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(337, 29);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(121, 238);
-            this.listBox1.TabIndex = 6;
+            this.cboGymnase.ForeColor = System.Drawing.Color.Fuchsia;
+            this.cboGymnase.FormattingEnabled = true;
+            this.cboGymnase.Location = new System.Drawing.Point(29, 311);
+            this.cboGymnase.Name = "cboGymnase";
+            this.cboGymnase.Size = new System.Drawing.Size(121, 21);
+            this.cboGymnase.TabIndex = 7;
             // 
-            // cmbGymnase
+            // lstRes
             // 
-            this.cmbGymnase.ForeColor = System.Drawing.Color.Fuchsia;
-            this.cmbGymnase.FormattingEnabled = true;
-            this.cmbGymnase.Items.AddRange(new object[] {
-            "Gymnase du Bugnon",
-            "Gymnase de Beaulieu",
-            "Gymnase d\'Yverdon"});
-            this.cmbGymnase.Location = new System.Drawing.Point(29, 311);
-            this.cmbGymnase.Name = "cmbGymnase";
-            this.cmbGymnase.Size = new System.Drawing.Size(121, 21);
-            this.cmbGymnase.TabIndex = 7;
+            this.lstRes.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lstRes.FormattingEnabled = true;
+            this.lstRes.Location = new System.Drawing.Point(343, 29);
+            this.lstRes.Name = "lstRes";
+            this.lstRes.Size = new System.Drawing.Size(121, 238);
+            this.lstRes.TabIndex = 8;
+            // 
+            // lblEcoles
+            // 
+            this.lblEcoles.AutoSize = true;
+            this.lblEcoles.Location = new System.Drawing.Point(349, 306);
+            this.lblEcoles.Name = "lblEcoles";
+            this.lblEcoles.Size = new System.Drawing.Size(106, 13);
+            this.lblEcoles.TabIndex = 10;
+            this.lblEcoles.Text = "écoles sélectionnées";
             // 
             // ComboBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 442);
-            this.Controls.Add(this.cmbGymnase);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lblEcoles);
+            this.Controls.Add(this.lstRes);
+            this.Controls.Add(this.cboGymnase);
             this.Controls.Add(this.lstEcoles);
             this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnEffacer);
             this.Controls.Add(this.btnAjouter);
-            this.Controls.Add(this.cmb);
+            this.Controls.Add(this.cboHG);
             this.Name = "ComboBox";
             this.Text = "ListBox et ComboBox avec des styles différents";
+            this.Load += new System.EventHandler(this.ComboBox_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cmb;
+        private System.Windows.Forms.ComboBox cboHG;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnEffacer;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnQuitter;
         private System.Windows.Forms.ListBox lstEcoles;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox cmbGymnase;
+        private System.Windows.Forms.ComboBox cboGymnase;
+        private System.Windows.Forms.ListBox lstRes;
+        private System.Windows.Forms.Label lblEcoles;
     }
 }
 
